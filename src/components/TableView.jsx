@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Table from "react-bootstrap/Table";
 
+import TableShow from './TableShow';
 
 const TableView = () => {
   const [isCreate, setIsCreate] = useState(false);
@@ -8,6 +9,61 @@ const TableView = () => {
   const [isEdit, setIsEdit] = useState(false);
   const [isDelete, setIsDelete] = useState(false);
   const [isApprove, setApprove] = useState(false);
+  
+
+  const [datas, setDatas] = useState([
+    {
+      id:1,
+      moduleName: "Configuration",
+      activityName: "Item Category",
+      isCreate,
+      isView,
+      isEdit,
+      isDelete,
+      isApprove,
+    },
+    {
+      id:2,
+      moduleName: "Configuration",
+      activityName: "Item Category",
+      isCreate,
+      isView,
+      isEdit,
+      isDelete,
+      isApprove,
+    },
+    {
+      id:3,
+      moduleName: "Configuration",
+      activityName: "Item Category",
+      isCreate,
+      isView,
+      isEdit,
+      isDelete,
+      isApprove,
+    },
+    {
+      id:4,
+      moduleName: "Configuration",
+      activityName: "Item Category",
+      isCreate,
+      isView,
+      isEdit,
+      isDelete,
+      isApprove,
+    },
+    {
+      id:5,
+      moduleName: "Configuration",
+      activityName: "Item Category",
+      isCreate,
+      isView,
+      isEdit,
+      isDelete,
+      isApprove,
+    }
+  ]);
+
 
 
   return (
@@ -25,655 +81,7 @@ const TableView = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Configuration</td>
-            <td>Item Category</td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isCreate}
-                  onChange={(e) => {
-                    setIsCreate(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isView}
-                  onChange={(e) => {
-                    setIsView(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isEdit}
-                  onChange={(e) => {
-                    setIsEdit(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isDelete}
-                  onChange={(e) => {
-                    setIsDelete(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isApprove}
-                  onChange={(e) => {
-                    setApprove(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-          </tr>
-          <tr>
-            <td>Configuration</td>
-            <td>Item </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isCreate}
-                  onChange={(e) => {
-                    setIsCreate(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isView}
-                  onChange={(e) => {
-                    setIsView(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isEdit}
-                  onChange={(e) => {
-                    setIsEdit(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isDelete}
-                  onChange={(e) => {
-                    setIsDelete(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isApprove}
-                  onChange={(e) => {
-                    setApprove(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-          </tr>
-          <tr>
-            <td>Configuration</td>
-            <td>party</td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isCreate}
-                  onChange={(e) => {
-                    setIsCreate(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isView}
-                  onChange={(e) => {
-                    setIsView(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isEdit}
-                  onChange={(e) => {
-                    setIsEdit(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isDelete}
-                  onChange={(e) => {
-                    setIsDelete(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isApprove}
-                  onChange={(e) => {
-                    setApprove(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-          </tr>
-          <tr>
-            <td>Configuration</td>
-            <td>profile</td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isCreate}
-                  onChange={(e) => {
-                    setIsCreate(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isView}
-                  onChange={(e) => {
-                    setIsView(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isEdit}
-                  onChange={(e) => {
-                    setIsEdit(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isDelete}
-                  onChange={(e) => {
-                    setIsDelete(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isApprove}
-                  onChange={(e) => {
-                    setApprove(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-          </tr>
-          <tr>
-            <td>Configuration</td>
-            <td>Bank Account</td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isCreate}
-                  onChange={(e) => {
-                    setIsCreate(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isView}
-                  onChange={(e) => {
-                    setIsView(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isEdit}
-                  onChange={(e) => {
-                    setIsEdit(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isDelete}
-                  onChange={(e) => {
-                    setIsDelete(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isApprove}
-                  onChange={(e) => {
-                    setApprove(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-          </tr>
-          <tr>
-            <td>Configuration</td>
-            <td>Change Password</td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isCreate}
-                  onChange={(e) => {
-                    setIsCreate(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isView}
-                  onChange={(e) => {
-                    setIsView(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isEdit}
-                  onChange={(e) => {
-                    setIsEdit(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isDelete}
-                  onChange={(e) => {
-                    setIsDelete(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isApprove}
-                  onChange={(e) => {
-                    setApprove(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-          </tr>
-          <tr>
-            <td>purchase</td>
-            <td> purchase</td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isCreate}
-                  onChange={(e) => {
-                    setIsCreate(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isView}
-                  onChange={(e) => {
-                    setIsView(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isEdit}
-                  onChange={(e) => {
-                    setIsEdit(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isDelete}
-                  onChange={(e) => {
-                    setIsDelete(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isApprove}
-                  onChange={(e) => {
-                    setApprove(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-          </tr>
-          <tr>
-          <td>purchase</td>
-            <td>Due payment</td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isCreate}
-                  onChange={(e) => {
-                    setIsCreate(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-              <input
-                  type="checkbox"
-                  checked={isView}
-                  onChange={(e) => {
-                    setIsView(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-              <input
-                  type="checkbox"
-                  checked={isEdit}
-                  onChange={(e) => {
-                    setIsEdit(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-              <input
-                  type="checkbox"
-                  checked={isDelete}
-                  onChange={(e) => {
-                    setIsDelete(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-              <input
-                  type="checkbox"
-                  checked={isApprove}
-                  onChange={(e) => {
-                    setApprove(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-          </tr>
-          <tr>
-          <td>Sales</td>
-            <td>Sales</td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isCreate}
-                  onChange={(e) => {
-                    setIsCreate(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-              <input
-                  type="checkbox"
-                  checked={isView}
-                  onChange={(e) => {
-                    setIsView(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-              <input
-                  type="checkbox"
-                  checked={isEdit}
-                  onChange={(e) => {
-                    setIsEdit(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-              <input
-                  type="checkbox"
-                  checked={isDelete}
-                  onChange={(e) => {
-                    setIsDelete(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-              <input
-                  type="checkbox"
-                  checked={isApprove}
-                  onChange={(e) => {
-                    setApprove(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-          </tr>
-          <tr>
-          <td>Sales</td>
-            <td>Due Receive</td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isCreate}
-                  onChange={(e) => {
-                    setIsCreate(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-              <input
-                  type="checkbox"
-                  checked={isView}
-                  onChange={(e) => {
-                    setIsView(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-              <input
-                  type="checkbox"
-                  checked={isEdit}
-                  onChange={(e) => {
-                    setIsEdit(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-              <input
-                  type="checkbox"
-                  checked={isDelete}
-                  onChange={(e) => {
-                    setIsDelete(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-              <input
-                  type="checkbox"
-                  checked={isApprove}
-                  onChange={(e) => {
-                    setApprove(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-          </tr>
-          <tr>
-          <td>Accounts</td>
-            <td>Voucher</td>
-            <td>
-              <form>
-                <input
-                  type="checkbox"
-                  checked={isCreate}
-                  onChange={(e) => {
-                    setIsCreate(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-              <input
-                  type="checkbox"
-                  checked={isView}
-                  onChange={(e) => {
-                    setIsView(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-              <input
-                  type="checkbox"
-                  checked={isEdit}
-                  onChange={(e) => {
-                    setIsEdit(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-              <input
-                  type="checkbox"
-                  checked={isDelete}
-                  onChange={(e) => {
-                    setIsDelete(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-            <td>
-              <form>
-              <input
-                  type="checkbox"
-                  checked={isApprove}
-                  onChange={(e) => {
-                    setApprove(e.target.checked);
-                  }}
-                />
-              </form>
-            </td>
-          </tr>
+          { datas.map(data=> <TableShow data={data} key={data.id}/>)}
         </tbody>
       </Table>
     </div>
