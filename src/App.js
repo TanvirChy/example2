@@ -1,12 +1,11 @@
 import "./App.css";
 import React from "react";
-import TableView from './components/TableView'
+import Trytable from "./components/Trytable";
 function App() {
 
   return (
     <div className="App">
-      <h1>hi</h1>
-      <TableView/>
+      <Trytable/>
 
     </div>
   );

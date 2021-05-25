@@ -1,0 +1,9 @@
+body {
+    margin:0;
+    background-color: aqua;
+}
+
+.container{
+    max-width: 860px;
+    margin:0 auto;
+}
